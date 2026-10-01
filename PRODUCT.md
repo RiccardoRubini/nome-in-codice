@@ -30,7 +30,7 @@ Configure teams, names and colors, board size and card counts; create a game wit
 - Explicit reveal confirmation and animation, scores and turn management.
 - Assassin eliminates the revealing team; others continue.
 - Spymaster sees assignments. An optional code protects this view; when left blank, the view opens without a login. Never include unrevealed assignments in public board API responses.
-- After a clue is entered, the public board may request optional AI association suggestions for the covered words. Suggestions are local to the requesting browser, do not reveal assignments, and never make a move automatically.
+- After a clue is entered, the public board may request optional AI association suggestions for the covered words. Suggested cards are marked directly on the board, locally in the requesting browser; suggestions do not reveal assignments and never make a move automatically.
 - Losing games after a deployment restart was acceptable, but shared state during play is required. D1 provides durable shared storage.
 - Open rule details: handling eliminated-team cards, starting-team advantage, and clue entry. Document implementation assumptions clearly.
 

@@ -13,7 +13,7 @@
   "d1_databases": [{
     "binding": "DB",
     "database_name": "nome-in-codice",
-    "database_id": "00000000-0000-0000-0000-000000000000",
+    "database_id": "c5c6a028-bd1a-4537-aa86-6fa8bd154142",
     "migrations_dir": "../migrations"
   }]
 }

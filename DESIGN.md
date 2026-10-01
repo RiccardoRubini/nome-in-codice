@@ -170,8 +170,8 @@ Controls use gently squared corners (5px), word cards use a slightly softer edge
 - **Behavior:** Selectable covered cards gain an olive border and light olive background on hover. Reveals animate for 0.45s; reduced-motion settings remove the animation.
 
 ### AI Suggestions
-- **Style:** A lightly ruled surface beneath the board holds one secondary action and two compact word lists. Each list keeps the card index visible so players can find the word on the board.
-- **Behavior:** Results appear only on request and disappear when the clue or covered-card set changes. Copy presents them as tentative suggestions, never as revealed identities.
+- **Style:** A compact ruled surface beneath the board holds the secondary action and a short status. Suggested covered cards gain an olive border, pale olive fill, and an explicit “AI” marker; they remain distinct from revealed team identities.
+- **Behavior:** Highlights appear only on request, can be hidden without repeating inference, and disappear when the clue or covered-card set changes. Copy presents them as tentative suggestions, never as revealed identities.
 
 ### Dialogs
 - **Style:** Light 12px surface over a darkened backdrop, with large condensed decision text and distinct cancel and confirm actions. Reveal and turn actions require explicit confirmation.

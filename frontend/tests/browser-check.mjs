@@ -118,10 +118,15 @@ await page.route('https://classifier.dev/v1/classify', async (route) => {
   });
 });
 await page.getByRole('button', { name: 'Chiedi all’AI' }).click();
-await page.locator('.ai-results').waitFor();
+await page.locator('.word-card.ai-suggested').first().waitFor();
 assert.equal(aiCalls[0].inputs.length, 30);
-assert.equal(await page.locator('.ai-words li').count(), 30);
-assert.equal(await page.locator('.ai-groups > div').first().locator('li').count(), 2);
+assert.equal(await page.locator('.word-card.ai-suggested').count(), 2);
+assert.equal(await page.locator('.ai-words').count(), 0);
+await page.getByRole('button', { name: 'Nascondi suggerimenti' }).click();
+assert.equal(await page.locator('.word-card.ai-suggested').count(), 0);
+await page.getByRole('button', { name: 'Mostra suggerimenti' }).click();
+assert.equal(await page.locator('.word-card.ai-suggested').count(), 2);
+assert.equal(aiCalls.length, 1);
 const secret = await (
   await page.request.get(`${base}/api/games/${id}/spy`, {
     headers: { 'X-Spy-Code': 'missione-test' }
@@ -136,10 +141,11 @@ await page
   .getByRole('button', { name: 'Rivela la carta', exact: true })
   .click();
 await page.locator('.word-card.revealed').waitFor();
-await page.locator('.ai-results').waitFor({ state: 'hidden' });
+await page.locator('.word-card.ai-suggested').first().waitFor({ state: 'hidden' });
 await page.getByRole('button', { name: 'Chiedi all’AI' }).click();
-await page.locator('.ai-results').waitFor();
+await page.locator('.word-card.ai-suggested').first().waitFor();
 assert.equal(aiCalls[1].inputs.length, 29);
+assert.equal(await page.locator('.word-card.ai-suggested').count(), 2);
 assert(!aiCalls[1].inputs.includes(secret.cards[own].word));
 await spectator.locator('.word-card.revealed').waitFor({ timeout: 10000 });
 await mobile.locator('.word-card.revealed').waitFor({ timeout: 10000 });
@@ -200,7 +206,7 @@ console.log(
       'confirmation cancellation',
       'reveal persistence',
       'host recovery on reload',
-      'AI compares only covered words and resets after a reveal',
+      'AI highlights suggested cards, toggles without a new request, and resets after a reveal',
       'turn passing',
       'unknown game',
       'open Spymaster without a code',

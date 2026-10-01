@@ -44,9 +44,7 @@
   let aiRelated = $derived(
     aiCurrent ? aiResult.items.filter((item) => item.related) : []
   );
-  let aiOther = $derived(
-    aiCurrent ? aiResult.items.filter((item) => !item.related) : []
-  );
+  let aiSuggested = $derived(new Set(aiRelated.map((item) => item.index)));
   let origin = $state('');
   let accessCode = $state('');
   const ownerName = (card) =>
@@ -88,9 +86,7 @@
     try {
       const items = await classifyClue(game.clue.word, candidates, controller.signal);
       if (aiKey === key) {
-        const byScore = (a, b) =>
-          (b.score ?? -1) - (a.score ?? -1) || a.index - b.index;
-        aiResult = { key, items: items.sort(byScore) };
+        aiResult = { key, items };
         aiOpen = true;
       }
     } catch (error) {
@@ -391,6 +387,7 @@
           class:civilian={card.owner === 'civilian'}
           class:assassin={card.owner === 'assassin'}
           class:just-revealed={lastRevealed === i}
+          class:ai-suggested={aiCurrent && aiOpen && aiSuggested.has(i)}
           style:--team={ownerColor(card)}
           disabled={spy ||
             card.revealed ||
@@ -398,10 +395,14 @@
             !game.clue ||
             busy ||
             !connected}
-          aria-label={`${card.word}${visible ? `, ${ownerName(card)}` : ''}${card.revealed ? ', rivelata' : ''}`}
+          aria-label={`${card.word}${visible ? `, ${ownerName(card)}` : ''}${card.revealed ? ', rivelata' : ''}${aiCurrent && aiOpen && aiSuggested.has(i) ? ', suggerita dall’AI' : ''}`}
           onclick={() => select(i)}
           ><span class="card-index">{String(i + 1).padStart(2, '0')}</span
-          ><strong
+          >{#if aiCurrent && aiOpen && aiSuggested.has(i)}<span
+              class="ai-card-mark"
+              aria-hidden="true">AI</span
+            >{/if}
+          <strong
             lang="it"
             class:long-word={card.word.length >= 9}
             style:--word-length={card.word.length}>{card.word}</strong
@@ -419,14 +420,13 @@
       <section class="ai-assist" aria-label="Suggerimenti AI">
         <div class="ai-assist-intro">
           <div>
-            <strong>Un secondo parere sul tabellone</strong>
-            <p>Confronta l’indizio con le parole ancora coperte.</p>
+            <strong>Suggerimenti AI</strong>
+            <p>Indica direttamente sul tabellone le carte che potrebbero essere collegate all’indizio.</p>
           </div>
           <button
             class="secondary ai-trigger"
             disabled={aiLoading || !connected}
-            aria-expanded={aiOpen && aiCurrent}
-            aria-controls="ai-results"
+            aria-pressed={aiOpen && aiCurrent}
             onclick={suggest}
             >{aiLoading
               ? 'Valutazione in corso…'
@@ -439,32 +439,14 @@
         </div>
         {#if aiError}<p class="ai-error" role="alert">{aiError}</p>{/if}
         {#if aiCurrent && aiOpen}
-          <div id="ai-results" class="ai-results">
-            <p class="ai-caution">
-              Indicazioni, non risposte certe. Il classificatore vede solo
-              l’indizio e le parole coperte; non conosce le identità delle carte.
-            </p>
-            <div class="ai-groups">
-              <div>
-                <h2>Possibilmente collegate <span>{aiRelated.length}</span></h2>
-                {#if aiRelated.length}<ol class="ai-words">
-                    {#each aiRelated as item}<li><span
-                          >{String(item.index + 1).padStart(2, '0')}</span
-                        ><strong>{item.word}</strong></li
-                      >{/each}</ol
-                  >{:else}<p class="ai-empty">Nessuna parola segnalata.</p>{/if}
-              </div>
-              <div>
-                <h2>Altre parole <span>{aiOther.length}</span></h2>
-                <ol class="ai-words">
-                  {#each aiOther as item}<li><span
-                        >{String(item.index + 1).padStart(2, '0')}</span
-                      ><strong>{item.word}</strong></li
-                    >{/each}
-                </ol>
-              </div>
-            </div>
-          </div>
+          <p class="ai-status" role="status"><span class="ai-status-mark" aria-hidden="true">AI</span>
+            {aiRelated.length === 0
+              ? 'Nessuna carta suggerita per questo indizio.'
+              : aiRelated.length === 1
+                ? 'Una carta evidenziata sul tabellone.'
+                : `${aiRelated.length} carte evidenziate sul tabellone.`}
+            <span class="ai-caution">Sono suggerimenti, non risposte certe. L’AI non conosce le identità.</span>
+          </p>
         {/if}
       </section>
     {/if}

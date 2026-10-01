@@ -49,11 +49,11 @@ uv run pywrangler d1 migrations apply nome-in-codice --local
 uv run pywrangler dev --port 8787
 ```
 
-Aprire `http://localhost:8787`. Questa modalità prova l'integrazione Python Worker + D1 + asset, senza pubblicare. Il database ID segnaposto nel file di configurazione è sufficiente per D1 locale.
+Aprire `http://localhost:8787`. Questa modalità prova l'integrazione Python Worker + D1 + asset, senza pubblicare. D1 locale usa l'ID nel file di configurazione senza collegarsi al database remoto.
 
 ## Pubblicazione su Cloudflare
 
-Occorrono un account Cloudflare e la creazione del database nel proprio account. Nessuna credenziale deve essere inserita nel repository.
+Occorrono un account Cloudflare e un database D1 `nome-in-codice` nel proprio account. Nessuna credenziale deve essere inserita nel repository. Se il database esiste già, verifica che il suo ID coincida con `database_id` in `backend/wrangler.jsonc`; altrimenti crealo:
 
 ```sh
 cd backend
@@ -61,7 +61,7 @@ uv run pywrangler login
 uv run pywrangler d1 create nome-in-codice
 ```
 
-Copiare il `database_id` restituito in `backend/wrangler.jsonc`, sostituendo il valore tutto zero. Poi:
+Copiare il `database_id` restituito in `backend/wrangler.jsonc`, sostituendo l'ID eventualmente presente. Poi:
 
 ```sh
 uv run pywrangler d1 migrations apply nome-in-codice --remote
@@ -84,7 +84,7 @@ Il comando restituisce l'URL pubblico `workers.dev`. Prima del deploy controllar
 
 ### Suggerimenti AI facoltativi
 
-Dopo aver registrato l’indizio, sul tabellone pubblico compare **Chiedi all’AI**. Il pulsante invia in una sola richiesta l’indizio e le parole ancora coperte a `POST https://classifier.dev/v1/classify`, poi mostra quali il classificatore considera possibilmente collegate e quali no. Non invia né riceve le identità delle carte, non rivela carte e non modifica la partita. Dopo una rivelazione o un cambio turno, i suggerimenti precedenti vengono eliminati; premere di nuovo il pulsante per valutare le parole rimaste.
+Dopo aver registrato l’indizio, sul tabellone pubblico compare **Chiedi all’AI**. Il pulsante invia in una sola richiesta l’indizio e le parole ancora coperte a `POST https://classifier.dev/v1/classify`, poi evidenzia direttamente sul tabellone le carte che il classificatore considera possibilmente collegate. Bordo, sfondo e contrassegno **AI** distinguono il suggerimento; il pulsante permette di nasconderlo o mostrarlo senza una nuova richiesta. Non invia né riceve le identità delle carte, non rivela carte e non modifica la partita. Dopo una rivelazione o un cambio turno, i suggerimenti precedenti vengono eliminati; premere di nuovo il pulsante per valutare le parole rimaste.
 
 La richiesta parte dal browser che preme il pulsante e usa l’accesso gratuito senza chiave. Il servizio esterno vede l’indizio e le parole inviate. Le risposte sono orientative: associazioni ambigue possono essere classificate male e il risultato può variare tra richieste. Se il servizio non è raggiungibile o applica un limite, il gioco continua normalmente senza suggerimenti. Per un uso più intenso, valutare una chiave workspace e un proxy server-side; non inserire mai una chiave nel frontend. Documentazione: [API](https://classifier.dev/developers), [limiti](https://classifier.dev/pricing).
 
