@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-01T19:05:55.487Z",
+  "title": "Design System: Nome in codice",
+  "extensions": {
+    "colorMeta": {
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#f1eee5",
+        "tonalRamp": [
+          "color-mix(in oklch, #f1eee5 35%, black)",
+          "color-mix(in oklch, #f1eee5 50%, black)",
+          "color-mix(in oklch, #f1eee5 70%, black)",
+          "#f1eee5",
+          "color-mix(in oklch, #f1eee5 80%, white)",
+          "color-mix(in oklch, #f1eee5 60%, white)",
+          "color-mix(in oklch, #f1eee5 40%, white)",
+          "color-mix(in oklch, #f1eee5 20%, white)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Light Surface",
+        "canonical": "#faf8f2",
+        "tonalRamp": [
+          "color-mix(in oklch, #faf8f2 35%, black)",
+          "color-mix(in oklch, #faf8f2 50%, black)",
+          "color-mix(in oklch, #faf8f2 70%, black)",
+          "#faf8f2",
+          "color-mix(in oklch, #faf8f2 80%, white)",
+          "color-mix(in oklch, #faf8f2 60%, white)",
+          "color-mix(in oklch, #faf8f2 40%, white)",
+          "color-mix(in oklch, #faf8f2 20%, white)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#222c25",
+        "tonalRamp": [
+          "color-mix(in oklch, #222c25 35%, black)",
+          "color-mix(in oklch, #222c25 50%, black)",
+          "color-mix(in oklch, #222c25 70%, black)",
+          "#222c25",
+          "color-mix(in oklch, #222c25 80%, white)",
+          "color-mix(in oklch, #222c25 60%, white)",
+          "color-mix(in oklch, #222c25 40%, white)",
+          "color-mix(in oklch, #222c25 20%, white)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "#596154",
+        "tonalRamp": [
+          "color-mix(in oklch, #596154 35%, black)",
+          "color-mix(in oklch, #596154 50%, black)",
+          "color-mix(in oklch, #596154 70%, black)",
+          "#596154",
+          "color-mix(in oklch, #596154 80%, white)",
+          "color-mix(in oklch, #596154 60%, white)",
+          "color-mix(in oklch, #596154 40%, white)",
+          "color-mix(in oklch, #596154 20%, white)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "#c9cbbd",
+        "tonalRamp": [
+          "color-mix(in oklch, #c9cbbd 35%, black)",
+          "color-mix(in oklch, #c9cbbd 50%, black)",
+          "color-mix(in oklch, #c9cbbd 70%, black)",
+          "#c9cbbd",
+          "color-mix(in oklch, #c9cbbd 80%, white)",
+          "color-mix(in oklch, #c9cbbd 60%, white)",
+          "color-mix(in oklch, #c9cbbd 40%, white)",
+          "color-mix(in oklch, #c9cbbd 20%, white)"
+        ]
+      },
+      "olive": {
+        "role": "primary",
+        "displayName": "Table Olive",
+        "canonical": "#52613b",
+        "tonalRamp": [
+          "color-mix(in oklch, #52613b 35%, black)",
+          "color-mix(in oklch, #52613b 50%, black)",
+          "color-mix(in oklch, #52613b 70%, black)",
+          "#52613b",
+          "color-mix(in oklch, #52613b 80%, white)",
+          "color-mix(in oklch, #52613b 60%, white)",
+          "color-mix(in oklch, #52613b 40%, white)",
+          "color-mix(in oklch, #52613b 20%, white)"
+        ]
+      },
+      "team-red": {
+        "role": "secondary",
+        "displayName": "Team Red",
+        "canonical": "#a93f36",
+        "tonalRamp": [
+          "color-mix(in oklch, #a93f36 35%, black)",
+          "color-mix(in oklch, #a93f36 50%, black)",
+          "color-mix(in oklch, #a93f36 70%, black)",
+          "#a93f36",
+          "color-mix(in oklch, #a93f36 80%, white)",
+          "color-mix(in oklch, #a93f36 60%, white)",
+          "color-mix(in oklch, #a93f36 40%, white)",
+          "color-mix(in oklch, #a93f36 20%, white)"
+        ]
+      },
+      "team-blue": {
+        "role": "secondary",
+        "displayName": "Team Blue",
+        "canonical": "#34658a",
+        "tonalRamp": [
+          "color-mix(in oklch, #34658a 35%, black)",
+          "color-mix(in oklch, #34658a 50%, black)",
+          "color-mix(in oklch, #34658a 70%, black)",
+          "#34658a",
+          "color-mix(in oklch, #34658a 80%, white)",
+          "color-mix(in oklch, #34658a 60%, white)",
+          "color-mix(in oklch, #34658a 40%, white)",
+          "color-mix(in oklch, #34658a 20%, white)"
+        ]
+      },
+      "team-ochre": {
+        "role": "secondary",
+        "displayName": "Team Ochre",
+        "canonical": "#8a681d",
+        "tonalRamp": [
+          "color-mix(in oklch, #8a681d 35%, black)",
+          "color-mix(in oklch, #8a681d 50%, black)",
+          "color-mix(in oklch, #8a681d 70%, black)",
+          "#8a681d",
+          "color-mix(in oklch, #8a681d 80%, white)",
+          "color-mix(in oklch, #8a681d 60%, white)",
+          "color-mix(in oklch, #8a681d 40%, white)",
+          "color-mix(in oklch, #8a681d 20%, white)"
+        ]
+      },
+      "team-violet": {
+        "role": "secondary",
+        "displayName": "Team Violet",
+        "canonical": "#67508e",
+        "tonalRamp": [
+          "color-mix(in oklch, #67508e 35%, black)",
+          "color-mix(in oklch, #67508e 50%, black)",
+          "color-mix(in oklch, #67508e 70%, black)",
+          "#67508e",
+          "color-mix(in oklch, #67508e 80%, white)",
+          "color-mix(in oklch, #67508e 60%, white)",
+          "color-mix(in oklch, #67508e 40%, white)",
+          "color-mix(in oklch, #67508e 20%, white)"
+        ]
+      },
+      "team-green": {
+        "role": "secondary",
+        "displayName": "Team Green",
+        "canonical": "#347268",
+        "tonalRamp": [
+          "color-mix(in oklch, #347268 35%, black)",
+          "color-mix(in oklch, #347268 50%, black)",
+          "color-mix(in oklch, #347268 70%, black)",
+          "#347268",
+          "color-mix(in oklch, #347268 80%, white)",
+          "color-mix(in oklch, #347268 60%, white)",
+          "color-mix(in oklch, #347268 40%, white)",
+          "color-mix(in oklch, #347268 20%, white)"
+        ]
+      },
+      "civilian": {
+        "role": "neutral",
+        "displayName": "Civilian",
+        "canonical": "#dedfd3",
+        "tonalRamp": [
+          "color-mix(in oklch, #dedfd3 35%, black)",
+          "color-mix(in oklch, #dedfd3 50%, black)",
+          "color-mix(in oklch, #dedfd3 70%, black)",
+          "#dedfd3",
+          "color-mix(in oklch, #dedfd3 80%, white)",
+          "color-mix(in oklch, #dedfd3 60%, white)",
+          "color-mix(in oklch, #dedfd3 40%, white)",
+          "color-mix(in oklch, #dedfd3 20%, white)"
+        ]
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "Focus Ochre",
+        "canonical": "#8a681d",
+        "tonalRamp": [
+          "color-mix(in oklch, #8a681d 35%, black)",
+          "color-mix(in oklch, #8a681d 50%, black)",
+          "color-mix(in oklch, #8a681d 70%, black)",
+          "#8a681d",
+          "color-mix(in oklch, #8a681d 80%, white)",
+          "color-mix(in oklch, #8a681d 60%, white)",
+          "color-mix(in oklch, #8a681d 40%, white)",
+          "color-mix(in oklch, #8a681d 20%, white)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Large condensed screen heading."
+      },
+      "heading": {
+        "displayName": "Heading",
+        "purpose": "Section and dialog titles."
+      },
+      "card-word": {
+        "displayName": "Card word",
+        "purpose": "Projected game nouns."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Instructions and prose."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Forms and compact status text."
+      }
+    },
+    "shadows": [
+      {
+        "name": "join-popover",
+        "value": "0 12px 40px #222c2526",
+        "purpose": "Open join form."
+      },
+      {
+        "name": "modal-dialog",
+        "value": "0 18px 60px #15201840",
+        "purpose": "Confirmed game actions and rules."
+      }
+    ],
+    "motion": [
+      {
+        "name": "card-reveal",
+        "value": "0.45s cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Brief rotation on a newly revealed card; disabled for reduced motion."
+      },
+      {
+        "name": "card-hover",
+        "value": "background-color 0.2s",
+        "purpose": "Interactive covered-card feedback."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "compact",
+        "value": "760px"
+      },
+      {
+        "name": "medium",
+        "value": "1100px"
+      },
+      {
+        "name": "projection",
+        "value": "1600px"
+      },
+      {
+        "name": "short-projection",
+        "value": "850px height"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Olive action for starting, confirming, and entering a game.",
+      "html": "<button class=\"ds-btn-primary\">Avvia la missione</button>",
+      "css": ".ds-btn-primary{min-height:44px;padding:12px 18px;border:0;border-radius:5px;background:var(--olive,#52613b);color:#fff;font:600 .85rem \"DM Sans\",sans-serif;cursor:pointer}.ds-btn-primary:hover{filter:brightness(.95)}.ds-btn-primary:focus-visible{outline:3px solid #8a681d;outline-offset:4px}.ds-btn-primary:disabled{opacity:.48;cursor:default}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Ruled option for canceling or passing.",
+      "html": "<button class=\"ds-btn-secondary\">Ripensaci</button>",
+      "css": ".ds-btn-secondary{min-height:44px;padding:12px 18px;border:1px solid var(--line,#c9cbbd);border-radius:5px;background:transparent;color:var(--ink,#222c25);font:600 .85rem \"DM Sans\",sans-serif;cursor:pointer}.ds-btn-secondary:hover{filter:brightness(.95)}.ds-btn-secondary:focus-visible{outline:3px solid #8a681d;outline-offset:4px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Light field with a visible ochre keyboard focus.",
+      "html": "<label class=\"ds-field\">Codice partita<input placeholder=\"ABC123\"></label>",
+      "css": ".ds-field{display:block;color:var(--ink,#222c25);font:600 .8rem \"DM Sans\",sans-serif}.ds-field input{display:block;width:100%;min-height:44px;margin-top:8px;padding:10px 12px;border:1px solid var(--line,#c9cbbd);border-radius:5px;background:var(--surface,#faf8f2);color:var(--ink,#222c25);font:400 1rem \"DM Sans\",sans-serif}.ds-field input:focus-visible{outline:3px solid #8a681d;outline-offset:4px}"
+    },
+    {
+      "name": "Game Navigation",
+      "kind": "nav",
+      "description": "Compact masthead with brand and quiet game actions.",
+      "html": "<nav class=\"ds-nav\"><strong>NOME IN CODICE</strong><a href=\"#\">Regole</a><a href=\"#\">Spymaster</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:16px;min-height:78px;padding:0 18px;border-bottom:1px solid var(--line,#c9cbbd);color:var(--ink,#222c25);font:600 .8rem \"DM Sans\",sans-serif}.ds-nav strong{margin-right:auto;letter-spacing:.08em}.ds-nav a{color:inherit;text-decoration:none;padding:12px}.ds-nav a:hover{text-decoration:underline}.ds-nav a:focus-visible{outline:3px solid #8a681d;outline-offset:4px}"
+    },
+    {
+      "name": "Score Tile",
+      "kind": "card",
+      "description": "Team badge, name, action status, and remaining count.",
+      "html": "<div class=\"ds-score\"><span class=\"ds-letter\">A</span><span><strong>Volpe</strong><small>In azione</small></span><b>8</b></div>",
+      "css": ".ds-score{display:flex;align-items:center;gap:12px;min-width:220px;padding:14px;border:1px solid var(--line,#c9cbbd);border-radius:6px;outline:2px solid #a93f36;outline-offset:-2px;background:var(--surface,#faf8f2);color:var(--ink,#222c25);font:400 .88rem \"DM Sans\",sans-serif}.ds-letter{display:grid;place-items:center;width:36px;height:36px;border-radius:4px;background:#a93f36;color:#fff;font-weight:700}.ds-score strong,.ds-score small{display:block}.ds-score small{color:var(--muted,#596154);font-size:.64rem}.ds-score b{margin-left:auto;font:600 2.2rem \"Barlow Condensed\",sans-serif}"
+    },
+    {
+      "name": "Word Card",
+      "kind": "custom",
+      "refersTo": "word-card",
+      "description": "Five-column board card with a dominant noun; longer Italian words hyphenate on mobile and known ownership remains explicit.",
+      "html": "<button class=\"ds-word-card\"><span class=\"ds-index\">01</span><strong style=\"--word-length:4\">LUNA</strong><small>IDENTITÀ RISERVATA</small></button>",
+      "css": ".ds-word-card{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:center;width:180px;height:110px;padding:10px 13px;border:1px solid #c0c3b2;border-radius:7px;background:var(--surface,#faf8f2);color:var(--ink,#222c25);cursor:pointer;transition:background-color .2s}.ds-word-card strong{max-width:100%;overflow-wrap:anywhere;font:600 2rem/1 \"Barlow Condensed\",sans-serif}.ds-index{position:absolute;top:7px;left:10px;color:var(--muted,#596154);font:.53rem \"DM Sans\",sans-serif}.ds-word-card small{margin-top:10px;font:400 .51rem \"DM Sans\",sans-serif;letter-spacing:.06em}.ds-word-card:hover{border-color:var(--olive,#52613b);background:#e7eadc}.ds-word-card:focus-visible{outline:3px solid #8a681d;outline-offset:4px}@media(max-width:760px){.ds-word-card{container-type:inline-size}.ds-word-card strong{font-size:clamp(.4rem,calc(155cqw / var(--word-length)),1.4rem);white-space:nowrap;overflow-wrap:normal}.ds-word-card strong.long-word{font-size:clamp(.75rem,3vw,.9rem);line-height:1.08;white-space:normal;hyphens:auto}.ds-word-card small{display:none}}"
+    },
+    {
+      "name": "Reveal Dialog",
+      "kind": "custom",
+      "description": "Focused confirmation surface for an irreversible reveal.",
+      "html": "<div class=\"ds-dialog\"><small>Conferma la scelta</small><h2>LUNA</h2><p>Questa carta verrà rivelata a tutti.</p><button>Rivela la carta</button></div>",
+      "css": ".ds-dialog{width:320px;padding:28px;border-radius:12px;background:var(--surface,#faf8f2);box-shadow:0 18px 60px #15201840;color:var(--ink,#222c25);font-family:\"DM Sans\",sans-serif}.ds-dialog small{color:var(--muted,#596154)}.ds-dialog h2{margin:10px 0 20px;font:600 3.2rem \"Barlow Condensed\",sans-serif}.ds-dialog p{font-size:.85rem;color:var(--muted,#596154)}.ds-dialog button{min-height:44px;padding:12px 18px;border:0;border-radius:5px;background:var(--olive,#52613b);color:#fff;font:600 .85rem \"DM Sans\",sans-serif}.ds-dialog button:hover{filter:brightness(.95)}.ds-dialog button:focus-visible{outline:3px solid #8a681d;outline-offset:4px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Operational Table",
+    "overview": "The interface reads as an ivory working surface for a game run in the same room. It favors rules, compact controls, numbered positions, and clearly named team ownership over decorative espionage imagery. The board is the visual center in play; setup keeps configuration and its live allocation preview in view together.\n\nThe public board must remain readable when projected, while the Spymaster map uses the same card geometry on a phone. Functional labels carry status alongside color. Card revelation is the expressive moment: a brief tilt gives way to a persistent ownership label, strike, and check. Reduced motion removes the animation.",
+    "keyCharacteristics": [
+      "Warm paper and light card surfaces with dark green ink.",
+      "Olive actions and five named team colors.",
+      "Condensed, large game words paired with quiet sans-serif controls.",
+      "Flat rules and outlines, with depth reserved for floating layers."
+    ],
+    "rules": [
+      {
+        "name": "The Named Ownership Rule",
+        "body": "Never communicate a card's owner or active team by hue alone; show the name, letter, or status text with it.",
+        "section": "colors"
+      },
+      {
+        "name": "The Word First Rule",
+        "body": "On the board, the noun receives the strongest type treatment; index and ownership remain visible but secondary.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Table Rule",
+        "body": "Keep board cards and score tiles free of resting shadows; use outlines and fills to express their state.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep word cards in five aligned columns on public and Spymaster boards.",
+      "Do pair team colors with visible names, letters, and status text.",
+      "Do preserve the 44px minimum for interactive controls and the visible keyboard focus outline.",
+      "Do provide a reduced-motion path for card revelation."
+    ],
+    "donts": [
+      "Don't put resting shadows on word cards or score tiles.",
+      "Don't replace the operational table with decorative spy graphics or fake telemetry.",
+      "Don't make ownership, turn, or elimination status depend on color alone."
+    ]
+  }
+}

@@ -1,0 +1,440 @@
+{
+  "title": "Il volto della missione",
+  "question": "Scegli la direzione visiva. Lo sviluppo procede direttamente nel codice, come concordato.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Tavolo operativo",
+      "thesis": "Una missione da preparare insieme, con le parole sempre al centro.",
+      "palette": [
+        "#f1eee5",
+        "#222c25",
+        "#52613b",
+        "#ba4237"
+      ],
+      "materials": [
+        "carta chiara",
+        "inchiostro scuro",
+        "linguette squadra"
+      ],
+      "viewport": "Configurazione a sinistra, anteprima del tabellone a destra; in partita la griglia occupa la scena.",
+      "risk": "La metafora militare resta leggera, adatta a un gruppo di adolescenti.",
+      "raised": [
+        {
+          "from": "Mappa dei trasporti",
+          "raise": "Squadre riconoscibili anche da nomi e simboli, oltre al colore."
+        },
+        {
+          "from": "Terminale di bordo",
+          "raise": "Turno attivo e pericolo hanno stati inequivocabili."
+        },
+        {
+          "from": "Cava di nuvole",
+          "raise": "Gli spazi vuoti separano le decisioni e rendono leggibile il gruppo."
+        },
+        {
+          "from": "Immersione",
+          "raise": "Un percorso chiaro dalla preparazione alla conclusione."
+        },
+        {
+          "from": "Televideo",
+          "raise": "La rivelazione è un gesto esplicito e controllato."
+        },
+        {
+          "from": "Desktop a un bit",
+          "raise": "Contrasto deciso e geometria stabile."
+        }
+      ],
+      "comp": ".impeccable/mocks/decision/assigned.png",
+      "wireframe": {
+        "cols": 12,
+        "rows": 8,
+        "regions": [
+          {
+            "label": "Squadre e configurazione",
+            "x": 0,
+            "y": 0,
+            "w": 4,
+            "h": 8
+          },
+          {
+            "label": "Tabellone / anteprima",
+            "x": 4,
+            "y": 0,
+            "w": 8,
+            "h": 6,
+            "accent": true
+          },
+          {
+            "label": "Turno e azioni",
+            "x": 4,
+            "y": 6,
+            "w": 8,
+            "h": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "pick",
+      "label": "Archivio riservato",
+      "thesis": "Schede degli agenti e fascicoli per una missione segreta.",
+      "palette": [
+        "#eee4d0",
+        "#27221d",
+        "#a63229"
+      ],
+      "materials": [
+        "carta avorio",
+        "timbri rossi"
+      ],
+      "viewport": "Un fascicolo di preparazione, poi grandi schede parola sul tavolo.",
+      "risk": "È la lettura più familiare dello stile spionaggio.",
+      "kicker": "IMPECCABLE’S PICK",
+      "comp": ".impeccable/mocks/decision/pick.png",
+      "wireframe": {
+        "cols": 12,
+        "rows": 8,
+        "regions": [
+          {
+            "label": "Squadre e configurazione",
+            "x": 0,
+            "y": 0,
+            "w": 4,
+            "h": 8
+          },
+          {
+            "label": "Tabellone / anteprima",
+            "x": 4,
+            "y": 0,
+            "w": 8,
+            "h": 6,
+            "accent": true
+          },
+          {
+            "label": "Turno e azioni",
+            "x": 4,
+            "y": 6,
+            "w": 8,
+            "h": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "transit",
+      "label": "Rete di agenti",
+      "thesis": "Le squadre sono linee, le parole sono obiettivi.",
+      "palette": [
+        "#112a45",
+        "#faf4e6",
+        "#b83737"
+      ],
+      "materials": [
+        "segnaletica",
+        "linee disciplinate"
+      ],
+      "viewport": "Squadre in una fascia continua, griglia centrale e cambi turno molto visibili.",
+      "risk": "La lettura da mappa può distrarre dal gioco.",
+      "verdict": "competitive",
+      "case": "Più forte sulla chiarezza; meno vicino allo spionaggio.",
+      "kept": "Stati espliciti e disciplina della composizione.",
+      "comp": ".impeccable/mocks/decision/transit.png",
+      "wireframe": {
+        "cols": 12,
+        "rows": 8,
+        "regions": [
+          {
+            "label": "Squadre e configurazione",
+            "x": 0,
+            "y": 0,
+            "w": 4,
+            "h": 8
+          },
+          {
+            "label": "Tabellone / anteprima",
+            "x": 4,
+            "y": 0,
+            "w": 8,
+            "h": 6,
+            "accent": true
+          },
+          {
+            "label": "Turno e azioni",
+            "x": 4,
+            "y": 6,
+            "w": 8,
+            "h": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "starship",
+      "label": "Sala comunicazioni",
+      "thesis": "Il tabellone come console di una squadra in missione.",
+      "palette": [
+        "#171d19",
+        "#a8d99b",
+        "#dfb464"
+      ],
+      "materials": [
+        "pannelli chiari",
+        "schermo scuro"
+      ],
+      "viewport": "Console di preparazione e tabellone ad alto contrasto.",
+      "risk": "Atmosfera più fantascientifica che da spie.",
+      "verdict": "competitive",
+      "case": "Riconoscibile per i ragazzi; comandi diretti al posto della riga di testo.",
+      "kept": "Stati espliciti e disciplina della composizione.",
+      "comp": ".impeccable/mocks/decision/starship.png",
+      "wireframe": {
+        "cols": 12,
+        "rows": 8,
+        "regions": [
+          {
+            "label": "Squadre e configurazione",
+            "x": 0,
+            "y": 0,
+            "w": 4,
+            "h": 8
+          },
+          {
+            "label": "Tabellone / anteprima",
+            "x": 4,
+            "y": 0,
+            "w": 8,
+            "h": 6,
+            "accent": true
+          },
+          {
+            "label": "Turno e azioni",
+            "x": 4,
+            "y": 6,
+            "w": 8,
+            "h": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "quarry",
+      "label": "Blocchi di indizi",
+      "thesis": "Ogni parola è un blocco da scoprire.",
+      "palette": [
+        "#f3f6f4",
+        "#3683bb",
+        "#414b55"
+      ],
+      "materials": [
+        "blocchi chiari",
+        "vuoti blu"
+      ],
+      "viewport": "Griglia modulare con rivelazione di colore.",
+      "risk": "Lontano dal tema spionaggio.",
+      "verdict": "declined",
+      "case": "Meno riconoscibile e meno chiaro per questa attività.",
+      "kept": "Stati espliciti e disciplina della composizione.",
+      "comp": ".impeccable/mocks/decision/quarry.png",
+      "wireframe": {
+        "cols": 12,
+        "rows": 8,
+        "regions": [
+          {
+            "label": "Squadre e configurazione",
+            "x": 0,
+            "y": 0,
+            "w": 4,
+            "h": 8
+          },
+          {
+            "label": "Tabellone / anteprima",
+            "x": 4,
+            "y": 0,
+            "w": 8,
+            "h": 6,
+            "accent": true
+          },
+          {
+            "label": "Turno e azioni",
+            "x": 4,
+            "y": 6,
+            "w": 8,
+            "h": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "dive",
+      "label": "Missione in profondità",
+      "thesis": "La missione segue una progressione verticale.",
+      "palette": [
+        "#10283e",
+        "#47b6c5",
+        "#f0f0de"
+      ],
+      "materials": [
+        "blu profondi",
+        "indicatori di avanzamento"
+      ],
+      "viewport": "Preparazione lungo una sequenza verticale.",
+      "risk": "La verticalità ostacola il tabellone proiettato.",
+      "verdict": "declined",
+      "case": "Tema e struttura meno adatti al gruppo.",
+      "kept": "Stati espliciti e disciplina della composizione.",
+      "comp": ".impeccable/mocks/decision/dive.png",
+      "wireframe": {
+        "cols": 12,
+        "rows": 8,
+        "regions": [
+          {
+            "label": "Squadre e configurazione",
+            "x": 0,
+            "y": 0,
+            "w": 4,
+            "h": 8
+          },
+          {
+            "label": "Tabellone / anteprima",
+            "x": 4,
+            "y": 0,
+            "w": 8,
+            "h": 6,
+            "accent": true
+          },
+          {
+            "label": "Turno e azioni",
+            "x": 4,
+            "y": 6,
+            "w": 8,
+            "h": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "teletext",
+      "label": "Canale segreto",
+      "thesis": "Una trasmissione a pagine con parole da rivelare.",
+      "palette": [
+        "#111111",
+        "#ffff66",
+        "#66dddd"
+      ],
+      "materials": [
+        "griglia di caratteri",
+        "blocchi colore"
+      ],
+      "viewport": "Pagine numerate per preparazione e partita.",
+      "risk": "Tipografia rigida meno leggibile da lontano.",
+      "verdict": "declined",
+      "case": "Il linguaggio televisivo retro non chiarisce la missione.",
+      "kept": "Stati espliciti e disciplina della composizione.",
+      "comp": ".impeccable/mocks/decision/teletext.png",
+      "wireframe": {
+        "cols": 12,
+        "rows": 8,
+        "regions": [
+          {
+            "label": "Squadre e configurazione",
+            "x": 0,
+            "y": 0,
+            "w": 4,
+            "h": 8
+          },
+          {
+            "label": "Tabellone / anteprima",
+            "x": 4,
+            "y": 0,
+            "w": 8,
+            "h": 6,
+            "accent": true
+          },
+          {
+            "label": "Turno e azioni",
+            "x": 4,
+            "y": 6,
+            "w": 8,
+            "h": 2
+          }
+        ]
+      }
+    },
+    {
+      "id": "desktop",
+      "label": "Archivio digitale",
+      "thesis": "Finestre e selezioni per trovare gli agenti.",
+      "palette": [
+        "#ffffff",
+        "#111111"
+      ],
+      "materials": [
+        "pixel",
+        "finestre"
+      ],
+      "viewport": "Configurazione a finestre e schede selezionabili.",
+      "risk": "Finestre e monocromia indeboliscono il colpo d’occhio sulle squadre.",
+      "verdict": "declined",
+      "case": "Meno identificazione e chiarezza rispetto al tavolo.",
+      "kept": "Stati espliciti e disciplina della composizione.",
+      "comp": ".impeccable/mocks/decision/desktop.png",
+      "wireframe": {
+        "cols": 12,
+        "rows": 8,
+        "regions": [
+          {
+            "label": "Squadre e configurazione",
+            "x": 0,
+            "y": 0,
+            "w": 4,
+            "h": 8
+          },
+          {
+            "label": "Tabellone / anteprima",
+            "x": 4,
+            "y": 0,
+            "w": 8,
+            "h": 6,
+            "accent": true
+          },
+          {
+            "label": "Turno e azioni",
+            "x": 4,
+            "y": 6,
+            "w": 8,
+            "h": 2
+          }
+        ]
+      }
+    }
+  ],
+  "reroll": {
+    "registers": [
+      "safer",
+      "bolder"
+    ]
+  },
+  "buildPath": {
+    "value": "code",
+    "toggle": true
+  },
+  "canon": true,
+  "canonCard": {
+    "id": "standard",
+    "label": "Tabellone classico",
+    "thesis": "Griglia di carte e comandi essenziali.",
+    "palette": [
+      "#f4f1e9",
+      "#242424",
+      "#af3838"
+    ],
+    "materials": [
+      "carte piatte",
+      "pannelli semplici"
+    ],
+    "viewport": "Configurazione standard, poi griglia con punteggi.",
+    "risk": "Familiare, con meno identità propria."
+  },
+  "steer": true
+}
